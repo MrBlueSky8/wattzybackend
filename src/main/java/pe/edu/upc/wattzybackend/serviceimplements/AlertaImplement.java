@@ -3,7 +3,6 @@ package pe.edu.upc.wattzybackend.serviceimplements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.upc.wattzybackend.entities.Alerta;
-import pe.edu.upc.wattzybackend.entities.Establecimiento_X_Usuario;
 import pe.edu.upc.wattzybackend.repositories.IAlertaRepository;
 import pe.edu.upc.wattzybackend.serviceinterfaces.IAlertaService;
 
