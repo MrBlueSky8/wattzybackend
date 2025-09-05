@@ -1,6 +1,4 @@
 package pe.edu.upc.wattzybackend.serviceinterfaces;
-
-import pe.edu.upc.wattzybackend.entities.Dispositivo;
 import pe.edu.upc.wattzybackend.entities.Establecimiento;
 
 import java.util.List;
