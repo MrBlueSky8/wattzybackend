@@ -23,11 +23,13 @@ public class Usuarios {
     @ManyToOne
     @JoinColumn(name = "rol_id")
     private Rol roles;
+    @Column(name = "estado",nullable = false)
+    private boolean estado;
 
     public Usuarios() {
     }
 
-    public Usuarios(int id_usuario, String dni, String nombres, String apellidos, String username, String correo, String password, Rol roles) {
+    public Usuarios(int id_usuario, String dni, String nombres, String apellidos, String username, String correo, String password, Rol roles, boolean estado) {
         this.id_usuario = id_usuario;
         this.dni = dni;
         this.nombres = nombres;
@@ -36,6 +38,7 @@ public class Usuarios {
         this.correo = correo;
         this.password = password;
         this.roles = roles;
+        this.estado = estado;
     }
 
     public int getId_usuario() {
@@ -100,5 +103,13 @@ public class Usuarios {
 
     public void setRoles(Rol roles) {
         this.roles = roles;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }
